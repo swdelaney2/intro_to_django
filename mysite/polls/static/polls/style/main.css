@@ -1,0 +1,13 @@
+h1 {
+  color: green;
+  text-align: center;
+}
+
+div {
+  width: 25%;
+  border: 1px black solid;
+}
+
+div:hover {
+  border: 1px black dashed;
+}
