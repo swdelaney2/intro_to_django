@@ -77,10 +77,13 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
         # For postgres, will need to edit many settings here. and possibly have to use Psycopg??
-        # 'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'intro_to_django',
+        'USER': 'delas',
+        'PASSWORD': '',
+        'HOST': 'localhost',
     }
 }
 
